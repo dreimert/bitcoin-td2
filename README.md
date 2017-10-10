@@ -35,7 +35,7 @@ Vous avez un ficher Dockerfile qui décrit une chaine de compilation. Il faut ma
 
 Votre build est fini ? Maintenant, il faut lancer un *container* avec votre image !
 
-    docker run -it dreimert/bitcoin-td2 bash
+    docker run -it dreimert/bitcoin-td2:main bash
 
 ### Q6 : Que fait `docker run` ?
 ### Q7 : À quoi sert les options `-it` ?
