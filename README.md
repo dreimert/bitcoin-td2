@@ -56,9 +56,11 @@ Vous avez envi d'avoir plusieurs terminaux sur votre machine ?
 
 Le but de ce TD est de préparer le TP où vous allez modifier le code source de Bitcoin pour créer votre propre blockchain.
 
-Vous aimez vim ou emacs comme IDE ? Tant mieux ! Vous n'aimez pas ? Arf... Ya peut-être une solution, ça s'appelle les volumes mais ça ne fonctionne pas comme vous voulez dans ce cas. Enfin, il y a un moyen simple de contourner le problème, simple comme `cp`.
+Vous aimez vim ou emacs comme IDE ? Tant mieux ! Vous n'aimez pas ? Arf... Ya peut-être une solution, ça s'appelle les volumes mais ça ne fonctionne pas comme vous voulez dans ce cas.
 
 ### Q12 : À quoi sert l'option `-v` de `docker run ` ?
+
+Sur les salles machines de TD/TP docker est configuré bizarrement. Vous ne pouvez pas créer de volumes ni lié un dossier qui n'est pas dans /tmp.
 
 ## Jouons avec nos voisins comme au TD 1
 
