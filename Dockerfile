@@ -8,15 +8,15 @@ EXPOSE 8333
 RUN apt-get -y update
 RUN apt-get install -y git
 
-WORKDIR /root/
-
-RUN git clone https://github.com/bitcoin/bitcoin
-
 RUN apt-get install -y autoconf
 RUN apt-get install -y wget
 RUN apt-get install -y gcc make
 RUN apt-get install -y g++ pkg-config
 RUN apt-get install -y bsdmainutils
+
+WORKDIR /root/
+
+RUN git clone https://github.com/bitcoin/bitcoin
 
 RUN wget http://ftpmirror.gnu.org/libtool/libtool-2.4.6.tar.gz
 RUN tar -zxvf libtool-2.4.6.tar.gz

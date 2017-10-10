@@ -35,7 +35,7 @@ Vous avez un ficher Dockerfile qui décrit une chaine de compilation. Il faut ma
 
 Votre build est fini ? Maintenant, il faut lancer un *container* avec votre image !
 
-    docker run -it bitcoin bash
+    docker run -it dreimert/bitcoin-td2 bash
 
 ### Q6 : Que fait `docker run` ?
 ### Q7 : À quoi sert les options `-it` ?
@@ -47,7 +47,10 @@ Vous êtes dans la matrice, pardon... le *container*. Vous devez voir le code so
 
 Lancer le démon, n'oubliez pas les options qui vont bien pour voir ce qu'il se passe.
 
-### Q10 : Tout va bien ?
+Vous avez envi d'avoir plusieurs terminaux sur votre machine ?
+
+### Q10 : À quoi sert `docker ps` ?
+### Q11 : Comment utiliser `docker exec` pour obtenir plusieurs terminaux ?
 
 ## Préparer le TP
 
@@ -55,14 +58,14 @@ Le but de ce TD est de préparer le TP où vous allez modifier le code source de
 
 Vous aimez vim ou emacs comme IDE ? Tant mieux ! Vous n'aimez pas ? Arf... Ya peut-être une solution, ça s'appelle les volumes mais ça ne fonctionne pas comme vous voulez dans ce cas. Enfin, il y a un moyen simple de contourner le problème, simple comme `cp`.
 
-### Q11 : À quoi sert l'option `-v` ?
+### Q12 : À quoi sert l'option `-v` de `docker run ` ?
 
 ## Jouons avec nos voisins comme au TD 1
 
 Maintenant, vous avez envie de vous connecter à votre voisin ? Essayer !
 
-### Q12 : Pourquoi cela ne marche pas ?
-### Q13 : Dans `docker run` à quoi sert l'option `-p` ?
+### Q13 : Pourquoi cela ne marche pas ?
+### Q14 : Dans `docker run` à quoi sert l'option `-p` ?
 
 ## Jouons tout seul
 
