@@ -1,14 +1,12 @@
 # TD2 Bitcoin
 
-## Docker
-
 ## Comprendre ce qu'il se passe
 
 Lisez l'ancienne version de ce TD à l'adresse suivante https://sfrenot.jumplyn.com/install/ ainsi que le fichier Dockerfile de ce dépôt.
 
-### Q1.* : Répondez aux questions de l'ancienne version.
+#### Q1.* : Répondez aux questions de l'ancienne version.
 
-## Ma première compilation des sources de Bitcoin
+## Ma première compilation des sources de Bitcoin ou pas...
 
 Vous ne connaissez pas Docker ?
 
@@ -16,20 +14,24 @@ Vous ne connaissez pas Docker ?
 * la doc en ligne : https://docs.docker.com/
 * via le CLI : `docker --help`
 
-### Q2 : Qu'est ce que Docker ?
+#### Q2 : Qu'est ce que Docker ?
 
-### Q3 : À votre avis, pourquoi pour ce TD je vous fais utiliser Docker ?
+#### Q3 : À votre avis, pourquoi pour ce TD je vous fais utiliser Docker ?
 
-### QBonus 1 : Pourquoi dans le Dockerfile à la ligne 45, j'ai écrit : exit 0 ?
+#### QBonus 1 : Pourquoi dans le Dockerfile à la ligne 45, j'ai écrit : exit 0 ?
 
-Vous avez un ficher Dockerfile qui décrit une chaine de compilation. Il faut maintenant construire l'image.
+Vous avez un ficher Dockerfile qui décrit une chaine de compilation. Il faut maintenant construire l'image sauf que ... si vous êtes en salle machine à l'INSA Lyon, cele ne fonctionne pas ! Si ça vous amuse, essayez de comprendre pourquoi. Mais du coup, comment vous allez faire ? Cf. Indice QBonus2 :).
 
     docker build -t bitcoin .
 
-### Q4 : Décrivez ce qu'il se passe.
-### Q5 : Que fait `docker build` ? Vous avez le temps de creuser et détailler la question normalement :)
+#### Q4 : Décrivez ce qu'il se passe.
+#### Q5 : Que fait `docker build` ? Vous avez le temps de creuser et détailler la question normalement :)
 
-### QBonus 2 : J'aurais pu être plus sympa avec vous et vous faire gagner du temps. Comment ?
+#### QBonus 2 : J'aurais pu être plus sympa avec vous et vous faire gagner du temps. Comment ?
+
+##### Indice : https://cloud.docker.com/swarm/dreimert/repository/docker/dreimert/bitcoin-td2/general
+
+#### Q9 3/4 : Comment récupérer l'image pour ceux qui sont sur une machine de TP ?
 
 ## Jouer avec Docker
 
@@ -37,20 +39,20 @@ Votre build est fini ? Maintenant, il faut lancer un *container* avec votre imag
 
     docker run -it dreimert/bitcoin-td2:main bash
 
-### Q6 : Que fait `docker run` ?
-### Q7 : À quoi sert les options `-it` ?
+#### Q6 : Que fait `docker run` ?
+#### Q7 : À quoi sert les options `-it` ?
 
 Vous êtes dans la matrice, pardon... le *container*. Vous devez voir le code source  de bitcoin et les exécutables.
 
-### Q8 : Où sont les exécutables de Bitcoin ?
-### Q9 : Comment lancer le démon Bitcoin ?
+#### Q8 : Où sont les exécutables de Bitcoin ?
+#### Q9 : Comment lancer le démon Bitcoin ?
 
 Lancer le démon, n'oubliez pas les options qui vont bien pour voir ce qu'il se passe.
 
 Vous avez envi d'avoir plusieurs terminaux sur votre machine ?
 
-### Q10 : À quoi sert `docker ps` ?
-### Q11 : Comment utiliser `docker exec` pour obtenir plusieurs terminaux ?
+#### Q10 : À quoi sert `docker ps` ?
+#### Q11 : Comment utiliser `docker exec` pour obtenir plusieurs terminaux ?
 
 ## Préparer le TP
 
@@ -58,7 +60,7 @@ Le but de ce TD est de préparer le TP où vous allez modifier le code source de
 
 Vous aimez vim ou emacs comme IDE ? Tant mieux ! Vous n'aimez pas ? Arf... Ya peut-être une solution, ça s'appelle les volumes mais ça ne fonctionne pas comme vous voulez dans ce cas.
 
-### Q12 : À quoi sert l'option `-v` de `docker run ` ?
+#### Q12 : À quoi sert l'option `-v` de `docker run ` ?
 
 Sur les salles machines de TD/TP docker est configuré bizarrement. Vous ne pouvez pas créer de volumes ni lié un dossier qui n'est pas dans /tmp.
 
@@ -66,8 +68,10 @@ Sur les salles machines de TD/TP docker est configuré bizarrement. Vous ne pouv
 
 Maintenant, vous avez envie de vous connecter à votre voisin ? Essayer !
 
-### Q13 : Pourquoi cela ne marche pas ?
-### Q14 : Dans `docker run` à quoi sert l'option `-p` ?
+#### Q13 : Pourquoi cela ne marche pas ?
+#### Q14 : Dans `docker run` à quoi sert l'option `-p` ?
+
+#### QPasBonus : tcp ? udp ? ...
 
 ## Jouons tout seul
 
