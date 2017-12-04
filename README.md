@@ -29,7 +29,7 @@ Vous avez un ficher Dockerfile qui décrit une chaine de compilation. Il faut ma
 
 #### QBonus 2 : J'aurais pu être plus sympa avec vous et vous faire gagner du temps. Comment ?
 
-##### Indice : https://cloud.docker.com/swarm/dreimert/repository/docker/dreimert/bitcoin-td2/general
+##### Indice : `docker pull dreimert/bitcoin-td2:main`
 
 #### Q9 3/4 : Comment récupérer l'image pour ceux qui sont sur une machine de TP ?
 
